@@ -84,7 +84,7 @@ base.css (fuentes e imagenes, prescindible si vamos a usar estilos propios) <br>
   </code></pre>
 </p>
 
-<p> Basandonos en el ejemplo de skeleton en su index.html copiaremos las partes más importantes en nuestra estructura básica, también 
+<p>Basandonos en el ejemplo de skeleton en su index.html copiaremos las partes más importantes en nuestra estructura básica, también 
 aprovecharemos para enlazar los archivos css de estilos y dar compatibilidad en todos los navegadores.
   <pre><code>
     <!doctype html>
@@ -105,6 +105,59 @@ aprovecharemos para enlazar los archivos css de estilos y dar compatibilidad en 
 	<title>Responsive con Skeleton @UchihaCFC</title>
 </head>
   </code></pre>
+</p>
+
+<p>Creamos el header, cuerpo (a dos columnas), tres columnas de contenido y footer de nuestra web de ejemplo</p>
+
+<code>
+<body>
+	<div class="container">
+		<!-- Cabecera -->
+		<header class="sixteen columns">
+			<h1>Mi primera web Responsive</h1>
+			<p>Bienvenido a mi primera web responsive</p>
+		</header> 
+		<!-- //Cabecera -->
+		<!--Menu horizontal-->
+		<nav class="sixteen columns">
+			Menu principal
+		</nav>
+		<!--// Menu horizontal-->
+
+<!-- Contenido y columna -->
+<section id="contenido">
+<article class="two-thirds column">
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores illum placeat reiciendis fuga est voluptas neque consequuntur. Tenetur est minus excepturi delectus hic sequi corrupti explicabo modi veritatis nemo fuga.
+</article>
+<article class="one-third column">
+	Columna derecha
+</article>
+</section>
+<!-- // Contenido y columna -->
+
+
+		<!-- Columnas -->
+		<section>
+			<article class="one-third column">Columna 1</article>
+			<article class="one-third column">Columna 2</article>
+			<article class="one-third column">Columna 3</article>
+		</section>
+	    <!-- // Columnas -->
+
+<!-- Pie de página -->
+<footer class="sixteen columns">
+Pie de página de mi primera web Responsive
+</footer>
+<!-- //Pie de página -->
+
+	</div>
+</body>
+</html>	
+</code>
+<p> Como se puede observar hemos utilizado las clases .container (para el div de todo contenido de la web incluido el header), 
+"two-thirds column" para el ancho de dos columnas del contenido principal y "one-third column" para la columna derecha como para 
+cada una de las columnas de nuestro contenedor de tres columnas inferior. Para el header como el nav o el footer como queremos que 
+nos ocupen todo el ancho de la web hemos utilizado ""sixteen columns" que es la máxima medida que podemos utilizar en Skeleton.
 </p>
 
 <h3>Los estilos</h3>
