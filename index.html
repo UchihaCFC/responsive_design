@@ -64,12 +64,48 @@ Todo están basados en un sistema grid por columnas lo que nos ayudará a crear 
 skeleton.css (clases que tendremos que utilizar)<br>
 layout.css  (media queries) <br>
 base.css (fuentes e imagenes, prescindible si vamos a usar estilos propios) <br>
-<li>index.html</li> (un archivo de ejemplo de skeleton)
+<li>index.html (un archivo de ejemplo de skeleton)</li> 
 </ul>
 
 <h3>Creando la estructura de nuestra web</h3>
 
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
+<p>Ahora que ya tenemos skeleton podemos comenzar a crear nuestro primer proyecto con él, para eso crearemos un nuevo archivo
+  HTML llamado "ejemplo_web_skeleton.html" y continuaremos creando la estructura básica de una web HTML5 :
+  <pre><code>
+    <!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+	<title>Responsive con Skeleton @UchihaCFC</title>
+</head>
+<body>
+</body>
+</html>
+  </code></pre>
+</p>
+
+<p> Basandonos en el ejemplo de skeleton en su index.html copiaremos las partes más importantes en nuestra estructura básica, también 
+aprovecharemos para enlazar los archivos css de estilos y dar compatibilidad en todos los navegadores.
+  <pre><code>
+    <!doctype html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="es"> <!--<![endif]-->
+<head>
+  <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="stylesheet" href="stylesheets/base.css">
+	<link rel="stylesheet" href="stylesheets/skeleton.css">
+	<link rel="stylesheet" href="stylesheets/layout.css">
+
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<title>Responsive con Skeleton @UchihaCFC</title>
+</head>
+  </code></pre>
+</p>
 
 <h3>Los estilos</h3>
 
